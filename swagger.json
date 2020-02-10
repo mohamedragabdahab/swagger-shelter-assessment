@@ -1,0 +1,345 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a sample Shelter server\n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
+    "version" : "1.0.1",
+    "title" : "Swagger Petstore",
+    "termsOfService" : "http://swagger.io/terms/",
+    "contact" : {
+      "email" : "apiteam@swagger.io"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "tags" : [ {
+    "name" : "Animal Shelter",
+    "description" : "Our customer Animal Salvation Army GmbH need our help implementing a new pet adoption website to streamline animal adoption process in Berlin",
+    "externalDocs" : {
+      "description" : "Find out more",
+      "url" : "http://swagger.io"
+    }
+  }, {
+    "name" : "Animal Salvation Army GmbH",
+    "description" : "Our customer Animal Salvation Army GmbH need our help implementing a new pet adoption website to streamline animal adoption process in Berlin"
+  } ],
+  "paths" : {
+    "/shelter" : {
+      "post" : {
+        "summary" : "Add a new shelter",
+        "operationId" : "addShelter",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Shelter object that needs to be added to the store",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Shelter"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Sheletr created sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/shelter/{shelterId}" : {
+      "delete" : {
+        "summary" : "Delete shelter from the system",
+        "operationId" : "deleteShelter",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "path",
+          "type" : "integer",
+          "format" : "int64",
+          "name" : "shelterId",
+          "description" : "Shelter ID that needs to be deleted from the store",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Sheletr has been deleted sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/shelter/{shelterId}/workers" : {
+      "get" : {
+        "summary" : "List worker of a shelter",
+        "operationId" : "listShelterWorkers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "path",
+          "type" : "integer",
+          "format" : "int64",
+          "name" : "shelterId",
+          "description" : "Shelter ID that needs to be deleted from the store",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Workers Successfully listed",
+            "schema" : {
+              "$ref" : "#/definitions/Worker"
+            }
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/shelter/{shelterId}/animals" : {
+      "get" : {
+        "summary" : "List worker of a shelter",
+        "operationId" : "listShelterAnimals",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "path",
+          "type" : "integer",
+          "format" : "int64",
+          "name" : "shelterId",
+          "description" : "Shelter ID that needs to be deleted from the store",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Animals Successfully listed",
+            "schema" : {
+              "$ref" : "#/definitions/Animal"
+            }
+          },
+          "401" : {
+            "description" : "Shelter not found"
+          }
+        }
+      }
+    },
+    "/worker" : {
+      "post" : {
+        "summary" : "Add a new worker to shelter",
+        "operationId" : "addWorker",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Worker object that needs to be added to the store",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Worker"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Worker has been added sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/worker/{workerId}" : {
+      "delete" : {
+        "summary" : "Delete worker from the system",
+        "operationId" : "deleteWorker",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "path",
+          "type" : "integer",
+          "format" : "int64",
+          "name" : "workerId",
+          "description" : "Worker ID that needs to be deleted from the store",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Worker has been deleted sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/animal" : {
+      "post" : {
+        "summary" : "Add a new animal to shelter",
+        "operationId" : "addAnimal",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Animal object that needs to be added to the store",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Animal"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Animal has been added sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    },
+    "/animal/{animalId}" : {
+      "delete" : {
+        "summary" : "Delete animal from the system",
+        "operationId" : "deleteAnimal",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "path",
+          "type" : "integer",
+          "format" : "int64",
+          "name" : "animalId",
+          "description" : "Animal ID that needs to be deleted from the store",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Animal has been deleted sucessfully"
+          },
+          "405" : {
+            "description" : "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Shelter" : {
+      "type" : "object",
+      "required" : [ "id", "name", "address" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "shelter-animals-name"
+        },
+        "address" : {
+          "type" : "string",
+          "example" : "Berlin"
+        }
+      }
+    },
+    "Worker" : {
+      "type" : "object",
+      "required" : [ "id", "shelterId", "name", "address", "email", "phone" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "shelterId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "worker-name"
+        },
+        "address" : {
+          "type" : "string",
+          "example" : "Berlin"
+        },
+        "email" : {
+          "type" : "string",
+          "example" : "worker@email.com"
+        },
+        "phone" : {
+          "type" : "string",
+          "example" : 490011001100
+        }
+      }
+    },
+    "Animal" : {
+      "type" : "object",
+      "required" : [ "id", "shelterId", "picture", "name", "race", "medicalCondition" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "shelterId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "picture" : {
+          "type" : "string",
+          "example" : "/images/animal.jpeg"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Dog"
+        },
+        "race" : {
+          "type" : "string",
+          "example" : "mammels"
+        },
+        "medicaCondition" : {
+          "type" : "string",
+          "example" : "healthy"
+        },
+        "phone" : {
+          "type" : "string",
+          "example" : 490011001100
+        }
+      }
+    },
+    "Customer" : {
+      "type" : "object",
+      "required" : [ "id", "name", "address", "email", "phone" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Dog"
+        },
+        "address" : {
+          "type" : "string",
+          "example" : "Berlin"
+        },
+        "email" : {
+          "type" : "string",
+          "example" : "customer@email.com"
+        },
+        "phone" : {
+          "type" : "string",
+          "example" : 490011001100
+        }
+      }
+    }
+  },
+  "externalDocs" : {
+    "description" : "Find out more about Swagger",
+    "url" : "http://swagger.io"
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/mohamedragabdahab/Animal-Salvation-Army/1.0.0",
+  "schemes" : [ "https", "http" ]
+}
