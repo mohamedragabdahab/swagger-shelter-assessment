@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient
+ * @package  Mohamed\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Contorion\SearchShelter\SwaggerClient;
+namespace Mohamed\SearchShelter\SwaggerClient;
 
-use \Contorion\SearchShelter\SwaggerClient\Configuration;
-use \Contorion\SearchShelter\SwaggerClient\ApiException;
-use \Contorion\SearchShelter\SwaggerClient\ObjectSerializer;
+use \Mohamed\SearchShelter\SwaggerClient\Configuration;
+use \Mohamed\SearchShelter\SwaggerClient\ApiException;
+use \Mohamed\SearchShelter\SwaggerClient\ObjectSerializer;
 
 /**
  * DefaultApiTest Class Doc Comment
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient
+ * @package  Mohamed\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

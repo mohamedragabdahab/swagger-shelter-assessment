@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "Contorion\\SearchShelter\\SwaggerClient\\" : "lib/" }
+        "psr-4": { "Mohamed\\SearchShelter\\SwaggerClient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Contorion\\SearchShelter\\SwaggerClient\\" : "test/" }
+        "psr-4": { "Mohamed\\SearchShelter\\SwaggerClient\\" : "test/" }
     }
 }

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient
+ * @package  Mohamed\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Contorion\SearchShelter\SwaggerClient;
+namespace Mohamed\SearchShelter\SwaggerClient;
 
 /**
  * ShelterTest Class Doc Comment
  *
  * @category    Class
  * @description Shelter
- * @package     Contorion\SearchShelter\SwaggerClient
+ * @package     Mohamed\SearchShelter\SwaggerClient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

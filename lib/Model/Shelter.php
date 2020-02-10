@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient
+ * @package  Mohamed\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Contorion\SearchShelter\SwaggerClient\Model;
+namespace Mohamed\SearchShelter\SwaggerClient\Model;
 
 use \ArrayAccess;
-use \Contorion\SearchShelter\SwaggerClient\ObjectSerializer;
+use \Mohamed\SearchShelter\SwaggerClient\ObjectSerializer;
 
 /**
  * Shelter Class Doc Comment
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient
+ * @package  Mohamed\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

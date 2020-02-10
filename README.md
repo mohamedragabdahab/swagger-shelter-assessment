@@ -57,12 +57,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
+$apiInstance = new Mohamed\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Contorion\SearchShelter\SwaggerClient\Model\Animal(); // \Contorion\SearchShelter\SwaggerClient\Model\Animal | Animal object that needs to be added to the store
+$body = new \Mohamed\SearchShelter\SwaggerClient\Model\Animal(); // \Mohamed\SearchShelter\SwaggerClient\Model\Animal | Animal object that needs to be added to the store
 
 try {
     $apiInstance->addAnimal($body);

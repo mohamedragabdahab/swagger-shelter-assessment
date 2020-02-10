@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Contorion\SearchShelter\SwaggerClient\Model
+ * @package  Mohamed\SearchShelter\SwaggerClient\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Contorion\SearchShelter\SwaggerClient\Model;
+namespace Mohamed\SearchShelter\SwaggerClient\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package Contorion\SearchShelter\SwaggerClient\Model
+ * @package Mohamed\SearchShelter\SwaggerClient\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface
