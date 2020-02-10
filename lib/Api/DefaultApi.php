@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -12,7 +12,7 @@
 /**
  * Swagger Petstore
  *
- * This is a sample Petstore server.  You can find  out more about Swagger at  [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
+ * This is a sample Shelter server [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.1
  * Contact: apiteam@swagger.io
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Contorion\SearchShelter\SwaggerClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Contorion\SearchShelter\SwaggerClient\ApiException;
+use Contorion\SearchShelter\SwaggerClient\Configuration;
+use Contorion\SearchShelter\SwaggerClient\HeaderSelector;
+use Contorion\SearchShelter\SwaggerClient\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DefaultApi
      *
      * Add a new animal to shelter
      *
-     * @param  \Swagger\Client\Model\Animal $body Animal object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Animal $body Animal object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,9 +108,9 @@ class DefaultApi
      *
      * Add a new animal to shelter
      *
-     * @param  \Swagger\Client\Model\Animal $body Animal object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Animal $body Animal object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class DefaultApi
      *
      * Add a new animal to shelter
      *
-     * @param  \Swagger\Client\Model\Animal $body Animal object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Animal $body Animal object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -181,7 +181,7 @@ class DefaultApi
      *
      * Add a new animal to shelter
      *
-     * @param  \Swagger\Client\Model\Animal $body Animal object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Animal $body Animal object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,7 +217,7 @@ class DefaultApi
     /**
      * Create request for operation 'addAnimal'
      *
-     * @param  \Swagger\Client\Model\Animal $body Animal object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Animal $body Animal object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -319,9 +319,9 @@ class DefaultApi
      *
      * Add a new shelter
      *
-     * @param  \Swagger\Client\Model\Shelter $body Shelter object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Shelter $body Shelter object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -335,9 +335,9 @@ class DefaultApi
      *
      * Add a new shelter
      *
-     * @param  \Swagger\Client\Model\Shelter $body Shelter object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Shelter $body Shelter object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -388,7 +388,7 @@ class DefaultApi
      *
      * Add a new shelter
      *
-     * @param  \Swagger\Client\Model\Shelter $body Shelter object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Shelter $body Shelter object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -408,7 +408,7 @@ class DefaultApi
      *
      * Add a new shelter
      *
-     * @param  \Swagger\Client\Model\Shelter $body Shelter object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Shelter $body Shelter object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -444,7 +444,7 @@ class DefaultApi
     /**
      * Create request for operation 'addShelter'
      *
-     * @param  \Swagger\Client\Model\Shelter $body Shelter object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Shelter $body Shelter object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -546,9 +546,9 @@ class DefaultApi
      *
      * Add a new worker to shelter
      *
-     * @param  \Swagger\Client\Model\Worker $body Worker object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Worker $body Worker object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -562,9 +562,9 @@ class DefaultApi
      *
      * Add a new worker to shelter
      *
-     * @param  \Swagger\Client\Model\Worker $body Worker object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Worker $body Worker object that needs to be added to the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -615,7 +615,7 @@ class DefaultApi
      *
      * Add a new worker to shelter
      *
-     * @param  \Swagger\Client\Model\Worker $body Worker object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Worker $body Worker object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -635,7 +635,7 @@ class DefaultApi
      *
      * Add a new worker to shelter
      *
-     * @param  \Swagger\Client\Model\Worker $body Worker object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Worker $body Worker object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -671,7 +671,7 @@ class DefaultApi
     /**
      * Create request for operation 'addWorker'
      *
-     * @param  \Swagger\Client\Model\Worker $body Worker object that needs to be added to the store (required)
+     * @param  \Contorion\SearchShelter\SwaggerClient\Model\Worker $body Worker object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -775,7 +775,7 @@ class DefaultApi
      *
      * @param  int $animal_id Animal ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -791,7 +791,7 @@ class DefaultApi
      *
      * @param  int $animal_id Animal ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1007,7 +1007,7 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1023,7 +1023,7 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1239,7 +1239,7 @@ class DefaultApi
      *
      * @param  int $worker_id Worker ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1255,7 +1255,7 @@ class DefaultApi
      *
      * @param  int $worker_id Worker ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1471,9 +1471,9 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Animal
+     * @return \Contorion\SearchShelter\SwaggerClient\Model\Animal
      */
     public function listShelterAnimals($shelter_id)
     {
@@ -1488,13 +1488,13 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Animal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Contorion\SearchShelter\SwaggerClient\Model\Animal, HTTP status code, HTTP response headers (array of strings)
      */
     public function listShelterAnimalsWithHttpInfo($shelter_id)
     {
-        $returnType = '\Swagger\Client\Model\Animal';
+        $returnType = '\Contorion\SearchShelter\SwaggerClient\Model\Animal';
         $request = $this->listShelterAnimalsRequest($shelter_id);
 
         try {
@@ -1546,7 +1546,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Animal',
+                        '\Contorion\SearchShelter\SwaggerClient\Model\Animal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1588,7 +1588,7 @@ class DefaultApi
      */
     public function listShelterAnimalsAsyncWithHttpInfo($shelter_id)
     {
-        $returnType = '\Swagger\Client\Model\Animal';
+        $returnType = '\Contorion\SearchShelter\SwaggerClient\Model\Animal';
         $request = $this->listShelterAnimalsRequest($shelter_id);
 
         return $this->client
@@ -1740,9 +1740,9 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Worker
+     * @return \Contorion\SearchShelter\SwaggerClient\Model\Worker
      */
     public function listShelterWorkers($shelter_id)
     {
@@ -1757,13 +1757,13 @@ class DefaultApi
      *
      * @param  int $shelter_id Shelter ID that needs to be deleted from the store (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Contorion\SearchShelter\SwaggerClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Worker, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Contorion\SearchShelter\SwaggerClient\Model\Worker, HTTP status code, HTTP response headers (array of strings)
      */
     public function listShelterWorkersWithHttpInfo($shelter_id)
     {
-        $returnType = '\Swagger\Client\Model\Worker';
+        $returnType = '\Contorion\SearchShelter\SwaggerClient\Model\Worker';
         $request = $this->listShelterWorkersRequest($shelter_id);
 
         try {
@@ -1815,7 +1815,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Worker',
+                        '\Contorion\SearchShelter\SwaggerClient\Model\Worker',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1857,7 +1857,7 @@ class DefaultApi
      */
     public function listShelterWorkersAsyncWithHttpInfo($shelter_id)
     {
-        $returnType = '\Swagger\Client\Model\Worker';
+        $returnType = '\Contorion\SearchShelter\SwaggerClient\Model\Worker';
         $request = $this->listShelterWorkersRequest($shelter_id);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -12,7 +12,7 @@
 /**
  * Swagger Petstore
  *
- * This is a sample Petstore server.  You can find  out more about Swagger at  [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
+ * This is a sample Shelter server [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.1
  * Contact: apiteam@swagger.io
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace Contorion\SearchShelter\SwaggerClient;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \Contorion\SearchShelter\SwaggerClient\Configuration;
+use \Contorion\SearchShelter\SwaggerClient\ApiException;
+use \Contorion\SearchShelter\SwaggerClient\ObjectSerializer;
 
 /**
  * DefaultApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

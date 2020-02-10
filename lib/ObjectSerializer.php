@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -13,7 +13,7 @@
 /**
  * Swagger Petstore
  *
- * This is a sample Petstore server.  You can find  out more about Swagger at  [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
+ * This is a sample Shelter server [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.1
  * Contact: apiteam@swagger.io
@@ -27,13 +27,13 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client;
+namespace Contorion\SearchShelter\SwaggerClient;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Contorion\SearchShelter\SwaggerClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -298,7 +298,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Swagger\Client\Model\\' . $data->{$discriminator};
+                $subclass = '\Contorion\SearchShelter\SwaggerClient\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

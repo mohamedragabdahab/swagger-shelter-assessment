@@ -1,4 +1,4 @@
-# Swagger\Client\DefaultApi
+# Contorion\SearchShelter\SwaggerClient\DefaultApi
 
 All URIs are relative to *https://virtserver.swaggerhub.com/mohamedragabdahab/Animal-Salvation-Army/1.0.0*
 
@@ -24,12 +24,12 @@ Add a new animal to shelter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Animal(); // \Swagger\Client\Model\Animal | Animal object that needs to be added to the store
+$body = new \Contorion\SearchShelter\SwaggerClient\Model\Animal(); // \Contorion\SearchShelter\SwaggerClient\Model\Animal | Animal object that needs to be added to the store
 
 try {
     $apiInstance->addAnimal($body);
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Animal**](../Model/Animal.md)| Animal object that needs to be added to the store |
+ **body** | [**\Contorion\SearchShelter\SwaggerClient\Model\Animal**](../Model/Animal.md)| Animal object that needs to be added to the store |
 
 ### Return type
 
@@ -70,12 +70,12 @@ Add a new shelter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Shelter(); // \Swagger\Client\Model\Shelter | Shelter object that needs to be added to the store
+$body = new \Contorion\SearchShelter\SwaggerClient\Model\Shelter(); // \Contorion\SearchShelter\SwaggerClient\Model\Shelter | Shelter object that needs to be added to the store
 
 try {
     $apiInstance->addShelter($body);
@@ -89,7 +89,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Shelter**](../Model/Shelter.md)| Shelter object that needs to be added to the store |
+ **body** | [**\Contorion\SearchShelter\SwaggerClient\Model\Shelter**](../Model/Shelter.md)| Shelter object that needs to be added to the store |
 
 ### Return type
 
@@ -116,12 +116,12 @@ Add a new worker to shelter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Worker(); // \Swagger\Client\Model\Worker | Worker object that needs to be added to the store
+$body = new \Contorion\SearchShelter\SwaggerClient\Model\Worker(); // \Contorion\SearchShelter\SwaggerClient\Model\Worker | Worker object that needs to be added to the store
 
 try {
     $apiInstance->addWorker($body);
@@ -135,7 +135,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Worker**](../Model/Worker.md)| Worker object that needs to be added to the store |
+ **body** | [**\Contorion\SearchShelter\SwaggerClient\Model\Worker**](../Model/Worker.md)| Worker object that needs to be added to the store |
 
 ### Return type
 
@@ -162,7 +162,7 @@ Delete animal from the system
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -208,7 +208,7 @@ Delete shelter from the system
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -254,7 +254,7 @@ Delete worker from the system
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -291,7 +291,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listShelterAnimals**
-> \Swagger\Client\Model\Animal listShelterAnimals($shelter_id)
+> \Contorion\SearchShelter\SwaggerClient\Model\Animal listShelterAnimals($shelter_id)
 
 List worker of a shelter
 
@@ -300,7 +300,7 @@ List worker of a shelter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Animal**](../Model/Animal.md)
+[**\Contorion\SearchShelter\SwaggerClient\Model\Animal**](../Model/Animal.md)
 
 ### Authorization
 
@@ -338,7 +338,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listShelterWorkers**
-> \Swagger\Client\Model\Worker listShelterWorkers($shelter_id)
+> \Contorion\SearchShelter\SwaggerClient\Model\Worker listShelterWorkers($shelter_id)
 
 List worker of a shelter
 
@@ -347,7 +347,7 @@ List worker of a shelter
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new Contorion\SearchShelter\SwaggerClient\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Worker**](../Model/Worker.md)
+[**\Contorion\SearchShelter\SwaggerClient\Model\Worker**](../Model/Worker.md)
 
 ### Authorization
 
