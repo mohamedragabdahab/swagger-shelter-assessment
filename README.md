@@ -21,11 +21,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/Mohamed/service-shelter-swagger-client.git"
+      "url": "https://github.com/mohamedragabdahab/service-shelter-swagger-client.git"
     }
   ],
   "require": {
-    "Mohamed/service-shelter-swagger-client": "*@dev"
+    "mohamedragabdahab/service-shelter-swagger-client": "*@dev"
   }
 }
 ```

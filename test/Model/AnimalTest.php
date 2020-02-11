@@ -11,7 +11,7 @@
  */
 
 /**
- * Swagger Petstore
+ * Swagger Animal Shelter
  *
  * This is a sample Shelter server [http://swagger.io](http://swagger.io) or on  [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
